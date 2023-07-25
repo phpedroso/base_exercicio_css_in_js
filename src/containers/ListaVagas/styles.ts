@@ -1,4 +1,6 @@
-.vagas {
+import styled from 'styled-components'
+
+export const EstiloListaVagas = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
@@ -7,7 +9,8 @@
 }
 
 @media (max-width: 768px) {
-  .vagas {
     grid-template-columns: 1fr;
+    margin-left: 12px;
+    margin-right: 12px;
   }
-}
+`
